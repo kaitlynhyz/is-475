@@ -5,8 +5,8 @@
 ![ERD Diagram](images/project_erd.png)
 
 
-## Prototype Creation and Queries
-### **Table: Person**
+## Prototype Database Creation
+### 1. **Person**
 ```
 CREATE TABLE xPerson
 (
@@ -17,7 +17,7 @@ CREATE TABLE xPerson
 	PersonType	VARCHAR(3) NOT NULL
 )
 ```
-### **Table: Model**
+### 2. **Model**
 ```
 CREATE TABLE xModel
 (
@@ -27,7 +27,7 @@ CREATE TABLE xModel
 	StandardPrice	MONEY
 )
 ```
-### **Table: Type**
+### 3. **Type**
 ```
 CREATE TABLE xType
 (
@@ -35,7 +35,7 @@ CREATE TABLE xType
 	TypeDescription	VARCHAR(100) NOT NULL
 )
 ```
-### **Table: Toy**
+### 4. **Toy**
 ```
 CREATE TABLE xToy
 (
@@ -44,7 +44,7 @@ CREATE TABLE xToy
 	PricePaid	MONEY NOT NULL
 )
 ```
-### **Table: Problem Report**
+### 5. **Problem Report**
 ```
 CREATE TABLE xProblemReport
 (
@@ -52,7 +52,7 @@ CREATE TABLE xProblemReport
 	ProblemDescription	VARCHAR(100) NOT NULL
 )
 ```
-### **Table: Test**
+### 6. **Test**
 ```
 CREATE TABLE xTest
 (
@@ -63,7 +63,7 @@ CREATE TABLE xTest
 	TestComplete CHAR(3) NOT NULL
 )
 ```
-### **Table: Tester**
+### 7. **Tester**
 ```
 CREATE TABLE xTester
 (
@@ -73,7 +73,7 @@ CREATE TABLE xTester
 	TestID	INT FOREIGN KEY REFERENCES xTest (TestID)	NOT NULL
 )
 ```
-### **Table: Owner**
+### 8. **Owner**
 ```
 CREATE TABLE xOwner
 (
@@ -82,7 +82,7 @@ CREATE TABLE xOwner
 	SerialNumber	INT FOREIGN KEY REFERENCES xToy (SerialNumber) NOT NULL
 )
 ```
-### **Table: Report**
+### 10. **Report**
 ```
 CREATE TABLE xReport
 (
@@ -97,3 +97,6 @@ CREATE TABLE xReport
 	TestID	INT FOREIGN KEY REFERENCES xTest (TestID) NOT NULL
 )
 ```
+
+## SQL Queries
+:point_right:[View the queries here!](https://github.com/kaitlynhyz/is-475/blob/main/zhang_project.sql)
