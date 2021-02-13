@@ -37,6 +37,7 @@ CREATE TABLE xType
 	TypeDescription	VARCHAR(100) NOT NULL
 )
 ```
+![Type Table](images/xType.PNG)
 ### 4. **Toy**
 ```
 CREATE TABLE xToy
@@ -46,6 +47,7 @@ CREATE TABLE xToy
 	PricePaid	MONEY NOT NULL
 )
 ```
+![Toy Table](images/xToy.PNG)
 ### 5. **Problem Report**
 ```
 CREATE TABLE xProblemReport
@@ -54,6 +56,7 @@ CREATE TABLE xProblemReport
 	ProblemDescription	VARCHAR(100) NOT NULL
 )
 ```
+![Problem Report Table](images/xProblemReport.PNG)
 ### 6. **Test**
 ```
 CREATE TABLE xTest
@@ -65,6 +68,7 @@ CREATE TABLE xTest
 	TestComplete CHAR(3) NOT NULL
 )
 ```
+![Test Table](images/xTest.PNG)
 ### 7. **Tester**
 ```
 CREATE TABLE xTester
@@ -75,6 +79,7 @@ CREATE TABLE xTester
 	TestID	INT FOREIGN KEY REFERENCES xTest (TestID)	NOT NULL
 )
 ```
+![Tester Table](images/xTester.PNG)
 ### 8. **Owner**
 ```
 CREATE TABLE xOwner
@@ -84,6 +89,7 @@ CREATE TABLE xOwner
 	SerialNumber	INT FOREIGN KEY REFERENCES xToy (SerialNumber) NOT NULL
 )
 ```
+![Owner Table](images/xOwner.PNG)
 ### 10. **Report**
 ```
 CREATE TABLE xReport
@@ -99,6 +105,7 @@ CREATE TABLE xReport
 	TestID	INT FOREIGN KEY REFERENCES xTest (TestID) NOT NULL
 )
 ```
+![Report Table](images/xReport.PNG)
 
 ## SQL Queries
 :point_right: [View the queries here!](https://github.com/kaitlynhyz/is-475/blob/main/replica_toy_project.sql)
