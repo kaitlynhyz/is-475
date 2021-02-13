@@ -4,7 +4,6 @@
 ## Database Design
 ![ERD Diagram](images/project_erd.png)
 
-
 ## Prototype Database Creation
 ### 1. **Person**
 ```
