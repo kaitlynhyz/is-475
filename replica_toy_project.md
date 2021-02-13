@@ -99,4 +99,4 @@ CREATE TABLE xReport
 ```
 
 ## SQL Queries
-:point_right:[View the queries here!](https://github.com/kaitlynhyz/is-475/blob/main/zhang_project.sql)
+:point_right:[View the queries here!](https://github.com/kaitlynhyz/is-475/blob/main/replica_toy_project.sql)
