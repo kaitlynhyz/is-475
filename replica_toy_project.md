@@ -17,6 +17,7 @@ CREATE TABLE xPerson
 	PersonType	VARCHAR(3) NOT NULL
 )
 ```
+![Person Table](images/xPerson.PNG)
 ### 2. **Model**
 ```
 CREATE TABLE xModel
@@ -27,6 +28,7 @@ CREATE TABLE xModel
 	StandardPrice	MONEY
 )
 ```
+![Model Table](images/xModel.PNG)
 ### 3. **Type**
 ```
 CREATE TABLE xType
